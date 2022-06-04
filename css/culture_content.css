@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+/*culture_story_wrap 스토리 전체*/
+#culture_story_wrap{
+    width:1273px;
+    margin:100px auto 0 auto;
+    overflow:hidden;
+    /* 스토리 하다 더보기 버튼 위치*/
+}
+#culture_story_wrap > h2{
+    font-size:30px;
+    height:34px;
+    line-height:34px;
+    margin-bottom:18px;
+} /*스토리*/
+
+#culture_story_wrap > div{
+    margin-bottom:50px;
+    height:28px;
+}
+#culture_story_wrap > div > p{
+    height:28px;
+    font-size:25px;
+    line-height:28px;
+}
+
+#culture_story_wrap > div > p:first-child{float:left;} /*당신의 일상을 특별하게*/
+
+#culture_story_wrap > div > p:last-child{
+    float:right;
+    text-align:center;
+    font-size:25px;
+    margin-right:10px;
+}/*스토리 사보*/
+
+#culture_story_wrap .culture_anchor a{float:left;}
+
+#culture_story_wrap .culture_anchor a:first-child{
+    padding-right:17px;
+    position:relative;
+} /* 네임앵커 스토리*/
+
+#culture_story_wrap .culture_anchor a:first-child::after{
+    content:"";
+    display:inline-block;
+    width:2px;
+    height:18px;
+    position:absolute;
+    top:50%;
+    right:0;
+    background-color:#c9c9c9;
+    transform:translate(0,-50%);
+} /*네임앵커 'ㅣ' */
+
+#culture_story_wrap .culture_anchor a:last-child{ padding-left:15px; }
+
+#culture_story_wrap .culture_anchor a:hover{
+    font-weight:bold;
+    color:#e20d3a;
+}
+
+
+/*스토리 콘텐츠 부분 */
+#culture_story_wrap .stroy_wrap{
+    width:1065px;
+    height:328px;
+    clear:both;
+    margin-left:208px;
+    transition:all 0.5s;
+    position:relative;
+    font-family:"NanumSR",sans-seif;
+    margin-top:10px;
+    cursor:pointer;
+    overflow:hidden;
+}/*section 공통*/
+
+#culture_story_wrap .story01_wrap{margin-top:0;} /*폰꾸용 스토리*/
+
+#culture_story_wrap .stroy_wrap:hover{margin-left:0;}
+
+#culture_story_wrap .stroy_wrap.stroy_hover{
+border-radius:30px;
+}
+
+#culture_story_wrap .stroy_wrap img{
+    float:left;
+}
+
+
+
+#culture_story_wrap .stroy_wrap .story_txt{
+    float:left;
+    width:737px;
+    height:328px;
+    background:url(../images/culture/txt_bg.png) no-repeat #f6f6f6;
+}
+
+#culture_story_wrap .stroy_wrap .story_txt h3{
+    font-size:20px;
+    height:22px;
+    line-height:22px;
+    text-align:center;
+    margin-top:80px;
+} /* 스토리 제목 공통*/
+
+#culture_story_wrap .stroy_wrap .story_txt p:nth-of-type(1){
+    width:565px;
+    margin:35px auto 0 auto;
+    font-size:16px;
+    line-height:1.7em;
+    text-indent:10px;
+    text-align:justify;
+    font-weight:500;
+} /* 스토리 내용 공통*/
+
+#culture_story_wrap .stroy_wrap .story_txt .more_view{
+    position:absolute;
+    right:30px;
+    bottom:27px;
+    height:22px;
+    width:110px;
+    text-indent:30px;
+} /*스토리 더 보기 공통*/
+
+#culture_story_wrap .stroy_wrap .story_txt .more_view a{
+    display:block;
+    line-height:23px;
+    width:110px;
+    height:22px;
+    background:url(../images/culture/right_arrow.svg) no-repeat -10px center;
+    transition:all 0.3s;
+    font-weight:bold;
+}
+
+#culture_story_wrap .stroy_wrap .story_txt  a:hover{background-position:0px center;}
+
+#story05_wrap{margin-bottom:50px;}
+
+#story_btn_wrap{
+    width:100%;
+    height:45px;
+    margin-top:20px;
+    text-align:center;
+}
+
+#story_btn_wrap button{
+    text-indent:-10px;
+    width:200px;
+    height:45px;
+    background-color:#eaeaea;
+    cursor:pointer;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:30px;
+    position:relative;
+    transition:all 0.3s;
+    
+}
+
+#story_btn_wrap button span{
+/*    height:45px;*/
+    padding-top:2px;
+    font-size:30px;
+    position:absolute;
+    font-weight:normal;
+    right:45px;
+    top:50%;
+    transform:translate(0, -50%);
+}
+
+#story_btn_wrap button:hover{
+    background-color:#e95977;
+    color:#ffffff;
+}
+
+
+/*culture_magazine_wrap 전체*/
+#culture_magazine_wrap{
+    width:1920px;
+    height:676px;
+    margin:200px auto 0 auto;
+    background:url(../images/culture/magazine_bg.png) no-repeat bottom;
+}
+
+#culture_magazine_top{
+    width:1313px;
+    height:87px;
+    margin:0 auto;
+}
+
+#culture_magazine_top h2{
+    font-size:30px;
+    height:34px;
+    line-height:34px;
+    margin-bottom:22px;
+} /*사보*/
+
+#culture_magazine_top > div{
+    margin-bottom:50px;
+    height:28px;
+}
+
+#culture_magazine_top > div > p{
+    height:28px;
+    font-size:25px;
+    line-height:28px;
+}
+
+#culture_magazine_top > div > p:first-child{float:left;} /*삼화앤 피플 매거진*/
+
+#culture_magazine_top > div > p:last-child{
+    float:right;
+    text-align:center;
+    font-size:25px;
+    margin-right:10px;
+}/*스토리 사보*/
+
+#culture_magazine_top .culture_anchor a{float:left;}
+
+#culture_magazine_top .culture_anchor a:first-child{
+    padding-right:17px;
+    position:relative;
+} /* 네임앵커 스토리*/
+
+#culture_magazine_top .culture_anchor a:first-child::after{
+    content:"";
+    display:inline-block;
+    width:2px;
+    height:18px;
+    position:absolute;
+    top:50%;
+    right:0;
+    background-color:#c9c9c9;
+    transform:translate(0,-50%);
+} /*네임앵커 'ㅣ' */
+
+#culture_magazine_top .culture_anchor a:last-child{ padding-left:15px; }
+
+#culture_magazine_top .culture_anchor a:hover{
+    font-weight:bold;
+    color:#e20d3a;
+}
+
+#culture_magazine_top .culture_anchor a:hover{font-weight:bold; color:#e20d3a;}
+
+#culture_magazine{
+    width:1313px;
+    height:521px;
+    margin:69px auto 0 auto;
+    position:relative;
+}
+
+#culture_magazine .magazine_txt_wrap{
+    float:left;
+    width:230px;
+    height:521px;
+    margin-left:115px;
+    overflow:hidden;
+}
+
+#culture_magazine .magazine_txt_wrap h3{
+    text-align:center;
+    margin-top:132px;
+    font-size:24px;
+    line-height:1.3em;
+    height:88px;
+} /*2021 Spring ...*/
+
+#culture_magazine .magazine_txt_wrap ul{
+    margin-top:70px;
+    font-size:16px;
+    font-weight:bold;
+    padding-left:20px;
+} /*메거진 목차*/
+
+#culture_magazine .magazine_txt_wrap ul li{
+    height:18px;
+    line-height:18px;
+    list-style:disc;
+    cursor:pointer;
+}
+
+#culture_magazine .magazine_txt_wrap ul li+li{margin-top:12px;}
+
+#culture_magazine .magazine_txt_wrap ul li:hover{font-style:italic;}
+
+
+#culture_magazine .magazine_img_wrap{
+    float:left;
+    margin-left:74px;
+    position:relative;
+    width:480px;
+    height:521px;
+}
+
+#magazine_cover_img{
+    width:390px;
+    height:521px;
+    overflow:hidden;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%, 0);
+}
+
+#magazine_cover_img .magazine_cover{
+    width:1920px;
+    height:521px;
+}
+
+#magazine_cover_img .magazine_cover img{
+    float:left;
+    
+}
+
+#culture_magazine .magazine_img_wrap .mg_btn{
+    position:absolute;
+    top:50%;
+    transform:translate(0, -50%);
+    border:0;
+    cursor:pointer;
+    background-color:transparent;
+    transition:all 0.3s;
+}
+#culture_magazine .magazine_img_wrap .mg_btn_l{left:0px;}
+#culture_magazine .magazine_img_wrap .mg_btn_r{right:0px;}
+
+#culture_magazine .magazine_img_wrap .mg_btn_l:hover{left:-10px;}
+#culture_magazine .magazine_img_wrap .mg_btn_r:hover{right:-10px;}
+
+#culture_magazine .magazine_img_wrap a{margin-left:45px;} /*매거진 이미지*/
+
+

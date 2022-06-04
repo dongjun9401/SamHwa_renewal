@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+/* web font */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+/* notice_box */
+#notice_box{
+    width:100%;
+    min-width:1900px;
+    height:40px;
+    background-color:#333333;
+    color:#ffffff;
+    text-align:center;
+}
+
+#notice_box p{ line-height:40px; }
+#notice_box p a{ color:#ffffff; margin-left:20px; }
+
+/*sh_main_img 메인 배너 전체*/
+#main_banner_wrap{
+    clear:both;
+    width:1600px;
+    height:700px;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+}
+
+#banner_btn_all{
+    position:absolute;
+    left:50%;
+    bottom:15px;
+    transform:translate(-50%, 0);
+    z-index:20;
+} /* 배너 이미지 버튼 */
+
+#banner_btn_all li{
+    float:left;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color:rgba(226,13,58,0.4);
+    text-indent:-9999px;
+/*    overflow:hidden;*/
+}
+#banner_btn_all li.banner_clk{
+    background-color:rgba(226,13,58,0.8);
+}
+
+#banner_btn_all li:not(:first-child){ margin-left:10px;}
+
+#banner_btn_all li a{
+    width:20px;
+    height:20px;
+    display:block;
+}
+
+#banner_img_box {
+    clear:both;
+    width:1600px;
+    height:700px;
+    position:relative;
+}
+
+#banner_img_box li{
+    position:absolute;
+    width:1600px;
+    height:700px;
+    top:0;
+}
+
+#banner_img_box li:nth-child(3) > div{
+    position:absolute;
+    left:20px;
+    top:50%;
+    transform:translateY(-45%);
+    line-height:1.4em;
+} /*장마철 옥상 방수*/
+
+#banner_img_box li:nth-child(3) > div > h2{
+    font-size:75px;
+    color:#00938e;
+    font-weight:normal;
+    font-family: "Black Han Sans", sans-serif;
+    line-height:1.3em;
+} 
+
+#banner_img_box li:nth-child(5) > div{
+    position:absolute;
+    left:320px;
+    top:60%;
+    transform:translateY(-50%);
+} /* 삶의 동기부여를  */
+
+#banner_img_box li:nth-child(5) > div > h2{
+    font-size:40px;
+    text-align:center;
+    color:#ffffff;
+    font-weight:normal;
+    font-family: "Black Han Sans", sans-serif;
+    line-height:1.3em;
+}
+
+/*inspiration_wrap 컬러 영감 전체*/
+#inspiration_wrap{
+    clear:both;
+    width:1240px;
+    height:465px;
+    margin:200px auto 0 auto;
+}
+
+#inspiration_left{
+    width:400px;
+    height:465px;
+    float:left;
+}
+
+#inspiration_left h2{
+    font-size:50px;
+    font-family:"Malgun Gothic",sans-serif;
+    letter-spacing:-1px;
+    width:400px;
+    height:50px;
+    line-height:50px;
+    text-align:left;
+    margin-bottom:18px;
+}/* color inspiration txt */
+
+#inspiration_left > p{
+    font-size:19px;
+    height:52px;
+    line-height:1.5em;
+    width:400px;
+    text-align:center;
+    margin-bottom:40px;
+} /*삼화페인트의 다양한 컬러로.. txt*/
+
+
+/*컬러표*/
+#color_box_wrap{
+    width:360px;
+    height:300px;
+    margin:0 auto;
+}
+
+#color_box_wrap .color_box{
+    width:360px;
+    height:60px;
+    box-shadow:1px 1px #dddddd;
+    margin-bottom:20px;
+    transition:all 0.3s;
+    cursor:pointer;
+}
+
+#color_box_wrap .color_box.selct_color_box{
+    box-shadow:1px 1px 5px rgba(76,76,76,0.7);
+} /* js click - addClass */
+
+#color_box_wrap .color_box:hover{
+    box-shadow:1px 1px 5px rgba(76,76,76,0.7);
+}
+
+#color_box_wrap .color_box p{float:left;}
+
+#color_box_wrap .color_box p:nth-child(1){
+    width:140px;
+    height:60px;
+    font-size:0;
+} /*각 색상*/
+
+.color_box .color_aw{background-color:#007974;}/*Alice Woodland*/
+.color_box .color_sm{background-color:#1d314e;}/*Sapia Mauve*/
+.color_box .color_eg{background-color:#a5b781;}/*Eco Green*/
+.color_box .color_ms{background-color:#cda3a8;}/*Mesa Pink*/
+
+#color_box_wrap .color_box .colorbox_txt{
+    width:220px;
+    text-align:center;
+    margin-top:10px;
+    font-size:15px;
+}
+
+#inspiration_right{
+    margin-top:4px;
+    float:right;
+    width:760px;
+    height:460px;
+    position:relative;
+    border-radius:30px;
+    overflow:hidden;
+} /*컬러영감 우측 전체*/
+
+#inspiration_right img{
+    position:absolute;
+    left:0;
+    top:0;
+} /* 색상 우측 이미지 */
+
+/*hot_issue_wrap 전체*/
+#hot_issue_wrap{
+    clear:both;
+    width:1240px;
+    margin:200px auto 0 auto;
+}
+
+
+#hot_issue_wrap h2{
+    font-family:"Malgun Gothic",sans-serif;
+    font-size:50px;
+    margin-bottom:30px;
+    height:50px;
+    width:500px;
+    line-height:50px;
+} /* Hot Issue - txt*/
+
+#hot_issue{
+    width:1240px;
+    overflow:hidden;
+}
+
+/*이미지 텍스트 박스 공통*/
+#hot_issue > div{
+    float:left;
+    width:620px;
+    height:620px;
+}
+
+/*issue_img 각 이미지 영역*/
+.issue_img{position:relative;}
+
+/*이미지 공통*/
+.issue_img img{
+    position:absolute;
+    left:0;
+    top:0;
+    cursor:pointer;
+}
+
+.issue_img img:nth-child(2){
+    opacity:0;
+    transition:all 1.5s;
+}
+.issue_img3{background-color:#a5b682;}
+
+.issue_img3 img:first-child{
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translate(0, -50%);
+}
+
+.issue_img:hover img:nth-child(2){opacity:1;}
+
+/*hot issue txt 영역*/
+.issue_txt{
+    font-family:"NanumSR",sans-serif;
+    padding:50px;
+    box-sizing:border-box;
+    transition:all 0.3s;
+    position:relative;
+}
+
+.issue_txt h3{
+    font-size:24px;
+    line-height:1.6em;
+    color:#3a3a3a;
+}
+
+/*핫이슈 텍스트 박스 배경화면*/
+.issue_txt h3::before{
+    content:"";
+    width:620px;
+    height:620px;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-5;
+    opacity:0.15;
+}
+
+/* 핫이슈 이미지 박스 배경이미지*/
+.issue_txt1 h3::before{background-image:url(../images/main/issue_bg01.png);}
+.issue_txt2 h3::before{background-image:url(../images/main/issue_bg02.png);}
+.issue_txt3 h3::before{background-image:url(../images/main/issue_bg03.png);}
+
+.issue_txt1 h3{margin-top:303px;} /*폰꾸용 배경화면 증정..*/
+.issue_txt2 h3{margin-top:275px;} /*친환경페인트로 셀프페인팅 한다면..*/
+.issue_txt3 h3{margin-top:258px;} /*투톤라이브 ep12. 바람 갯마을 차차차..*/
+ 
+/*핫이슈 텍스트 내용 부분*/
+.issue_txt p:nth-of-type(1){
+    font-size:14px;
+    line-height:2em;
+    color:#4e4e4e;
+    width:520px;
+    font-weight:bold;
+    text-indent:10px;
+    position:absolute;
+    left:50px;
+    bottom:75px;
+    text-align:justify;
+}
+
+.issue_txt3 p:nth-of-type(1){text-indent:0;}
+
+/* -> More view */
+.issue_txt p.more_view{
+    position:absolute;
+    left:50px;
+    bottom:50px;
+    height:22px;
+    width:110px;
+    text-indent:30px;
+}
+
+.issue_txt p.more_view a{
+    display:block;
+    line-height:23px;
+    width:110px;
+    height:22px;
+    background:url(../images/main/right_arrow.svg) no-repeat -10px center;
+    transition:all 0.3s;
+    font-weight:bold;
+}
+
+.issue_txt p.more_view a:hover{background-position:0px center;}
+
+
+/*삼화 비즈니스 영역 전체*/
+#bussiness_area_wrap{
+    clear:both;
+    width:1400px;
+    height:575px;
+    margin:200px auto 0 auto;
+}
+
+#bussiness_txt{margin-left:80px;}
+
+#bussiness_txt h2{
+    font-family:"맑은 고딕","Malgun Gothic",sans-serif;
+    font-size:50px;
+    line-height:50px;
+    letter-spacing:-1px;
+    width:344px;
+} /*Samhwa Bussyness Area*/
+
+#bussiness_txt p{
+    font-size:18px;
+    color:#444444;
+    font-weight:bold;
+    margin-top:15px;
+    text-indent:10px;
+    letter-spacing:0.5px;
+} /*친환경에 바탕을 둔...*/
+
+#bussiness_img_wrap{
+    width:1400px;
+    height:450px;
+    margin-top:40px;
+    position:relative;
+} /*Bussyness Area 이미지 div */
+
+#bussiness_img_wrap button{
+    position:absolute;
+    top:50%;
+    transform:translate(0, -50%);
+    cursor:pointer;
+    border:none;
+    background-color:transparent;
+    transition:left 0.3s, right 0.3s;
+    z-index:10;
+} /* <  > */
+
+#bussiness_img_wrap .area_btn_l{left:-50px;}
+#bussiness_img_wrap .area_btn_r{right:-50px;}
+#bussiness_img_wrap .area_btn_l:hover{left:-55px;}
+#bussiness_img_wrap .area_btn_r:hover{right:-55px;}
+
+#area_list_img_wrap{
+    width:1400px;
+    height:450px;
+    overflow:hidden;
+}
+
+#area_list_img_wrap .area_list_img{
+    height:450px;
+    width:3530px;
+} /* ul */
+
+#area_list_img_wrap .area_list_img li{
+    float:left; 
+    position:relative;
+    width:335px;
+    height:450px;
+    cursor:pointer;
+} /* 비즈니스 영역 각 이미지 영역*/
+
+#area_list_img_wrap .area_list_img li+li{margin-left:20px;}
+
+#area_list_img_wrap .area_list_img li::before{
+    content:"";
+    display:block;
+    width:335px;
+    height:450px;
+    background-color:rgba(0,0,0,0.2);
+    position:absolute;
+    left:0;
+    top:0;
+    transition:background 0.3s;
+} /* 이미지 배경 */
+
+#area_list_img_wrap .area_list_img li:hover::before{background-color:transparent;}
+
+#area_list_img_wrap .area_list_img li div{
+    width:130px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    z-index:100;
+    text-align:center;
+} /* 각 아이콘 + 텍스트 */
+
+#area_list_img_wrap .area_list_img li div h3{
+    font-size:20px;
+    margin-top:10px;
+    font-weight:600;
+    color:#ffffff;
+    opacity:1;
+    transition:all 0.3s;
+}
+
+#area_list_img_wrap .area_list_img li:hover div h3{opacity:0;}

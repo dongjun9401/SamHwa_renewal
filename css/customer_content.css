@@ -1,0 +1,498 @@
+@charset "utf-8";
+
+/*agency_search_wrap 대리점 찾기*/
+#agency_search_wrap{
+    width:1400px;
+    margin:100px auto 0 auto;
+}
+
+.customer_anchor_btn{
+    float:right;
+    margin-bottom:20px;
+    margin-right:50px;
+} /* 대리점 찾기, 고객센터 네임앵커 */
+
+.customer_anchor_btn li{
+    float:left;
+    font-size:20px;
+    text-align:center;
+    height:25px;
+    line-height:25px;
+}
+
+.customer_anchor_btn li:first-child{
+    margin-right:15px;
+    position:relative;
+    padding-right:17px;
+}
+
+.customer_anchor_btn li:first-child::after{
+    content:"";
+    display:block;
+    width:2px;
+    height:20px;
+    background-color:#c9c9c9;
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translate(0, -50%);
+}
+
+.customer_anchor_btn li:hover a{
+    color:#e20d3a;
+    font-weight:bold;
+}
+
+#agency_search_box{
+    clear:both;
+    width:1400px;
+    overflow:hidden;
+    background-color:#f1f1f1;
+    padding:40px 80px;
+    box-sizing:border-box;
+} /* 대리점 찾기 내용 박스 */
+
+#agency_search_top{
+    height:45px;
+}
+
+#agency_search_top h2{
+    font-size:25px;
+    font-weight:bold;
+    line-height:45px;
+    float:left;
+} /* 대리점 찾기 */
+
+#serch_select_wrap{
+    float:right;
+    width:872px;
+}
+
+#agency_option_list01, #agency_option_list02{
+    width:240px;
+    height:40px;
+    float:left;
+    position:relative;
+} 
+
+#agency_option_list02{
+    margin:0 14px 0 18px;
+}
+
+#agency_option_list02 button, #agency_option_list01 button{
+    width:240px;
+    height:40px;
+    border:none;
+    border-bottom:2px solid #000000;
+    text-align:left;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:16px;
+    background:url(../images/customer/select_arrow01.png) no-repeat 210px center;
+}
+
+#agency_option_list01 ul, #agency_option_list02 ul{
+    position:absolute;
+    left:0;
+    top:40px;
+    width:240px;
+    z-index:10;
+}
+
+#agency_option_list01 ul{height:160px; overflow-y:scroll;}
+#agency_option_list02 ul{height:80px;}
+
+#agency_option_list01 ul li,#agency_option_list02 ul li{
+    width:240px; 
+    height:40px;
+    line-height:40px;
+    text-indent:10px;
+    font-size:16px;
+    cursor:pointer;
+    background-color:#fff;
+}
+#agency_option_list01 ul li{
+    width:223px; 
+}
+#agency_option_list01 ul li.region_sel{
+    background-color:#000000;
+    color:#fff;
+}
+
+#agency_option_list02 ul li.color_match{
+    background-color:#000000;
+    color:#fff;
+}
+
+#agency_option_list03{
+    width:360px;
+    float:left;
+    height:40px;
+    position:relative;
+}
+#agency_option_list03 input{
+    width:360px;
+    height:40px;
+    font-size:16px;
+    font-weight:bold;
+    text-indent:10px;
+    color:#666666;
+    outline:none;
+    border:none;
+    background-color:transparent;
+    border-bottom:2px solid #000000;
+}
+
+#agency_option_list03 span{
+    position:absolute;
+    right:10px;
+    top:8px;
+    display:block;
+    width:22px;
+    height:22px;
+}
+
+#agency_map_box{
+    clear:both;
+    margin-top:40px;
+    position:relative;
+
+}
+
+#agency_map_box iframe{
+    width:1240px;
+    height:760px;
+
+    z-index:-1;
+}
+
+#agency_address_wrap{
+    position:absolute;
+    left:0;
+    bottom:0;
+    background-color:rgba(255,255,255,0.5);
+    width:1240px;
+    height:380px;
+    transition:background 0.3s;
+}
+#agency_address_wrap:hover{
+    background-color:rgba(255,255,255,0.8);
+}
+
+#address_txt_box{
+    float:right;
+    width:620px;
+    height:380px;
+    padding-left:40px; 
+    box-sizing:border-box;
+}
+
+#address_txt_box .agency_add00{
+    margin-top:50px;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+#address_txt_box .agency_add00 h3{
+    float:left;
+    width:180px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+#address_txt_box .agency_add00 p{
+    float:left;
+    font-size:14px;
+    font-weight:bold;
+    color:#000000;
+}
+#address_txt_box .agency_add00 p span{
+    display:block;
+    margin-top:10px;
+}
+
+#address_txt_box .agency_add01{
+    margin-top:37px;
+}
+
+.agency_list_num{
+    width:200px;
+    margin:20px auto 0 auto;
+    text-align:center;   
+} /* << 1 2 3 4 5 >> */
+
+.agency_list_num li{
+    display:inline-block;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.agency_list_num li a{
+    color:#666666;
+}
+
+.agency_list_num li a.agency_list_active{
+    color:#e20d3a;
+}
+
+.agency_list_num li a.agency_list_hover{
+    color:#000000;
+}
+
+.agency_list_num li:not(:first-child){
+    margin-left:5px;
+    padding:0 2px;
+}
+
+
+/* customer_center_wrap 고객센터*/
+#customer_center_wrap{
+    width:1400px;
+    margin:200px auto 0 auto;
+    overflow:hidden;
+}
+
+#cs_container{
+    clear:both;
+    width:1400px;
+    height:1050px;
+    padding-top:60px;
+    box-sizing:border-box;
+    background: url(../images/customer/cs_background.png) no-repeat left center #f1f1f1;
+}
+
+#cs_tle_box{
+    width:1240px;
+    height:40px;
+    margin:0 auto;
+} /* 고객센터 title */
+
+#cs_tle_box h2{
+    float:left;
+    font-size:25px;
+    font-weight:bold;
+    line-height:40px;
+} /* 신속하고 정확하게 상담해 드립니다. */
+
+#cs_tle_box .cs_tel{
+    float:right;
+    height:40px;
+    margin-right:140px;
+}
+
+#cs_tle_box .cs_tel li{
+    float:left;
+    font-size:18px;
+    line-height:40px;
+    padding-left:50px;
+}
+
+#cs_tle_box .cs_tel li:nth-child(1){
+    background:url(../images/customer/tel_icon.png) no-repeat left center;
+} /* TEL */
+
+#cs_tle_box .cs_tel li:nth-child(2){
+    margin-left:80px;
+    background:url(../images/customer/fax_icon.png) no-repeat left center;
+} /* FAX */
+
+#customer_consult_wrap{
+    width:1080px;
+    height:750px;
+    margin:50px auto;
+} /* form */
+
+.consult_l_box{
+    float:left;
+    width:520px;
+} /* 고객상담 입력 왼쪽 */
+
+.consult_l_box > div:not(:first-child){
+    margin-top:15px;
+}
+.consult_l_box .cs_input_tle{
+    display:block;
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+.c_consult01{
+    position:relative;
+}
+.c_consult01 button{
+    width:520px;
+    height:50px;
+    border:none;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:bold;
+    color:#666666;
+    text-align:left;
+    text-indent:20px;
+    background:url(../images/customer/consult_arrow01.png) no-repeat 490px center #ffffff;
+} /* 문의유형 선택 */
+
+.c_consult01 ul{
+    width:520px;
+    height:150px;
+/*    border:1px solid #333333;*/
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    top:80px;
+    z-index:15;
+}
+
+.c_consult01 ul li{
+    width:520px;
+    height:50px;
+    font-size:14px;
+    font-weight:bold;
+    text-indent:20px;
+    line-height:50px;
+    background-color:#eaeaea;
+}
+
+.c_consult01 ul li.consult_type_select{
+    background-color:#000000;
+    color:#ffffff;
+}
+
+.c_consult02 input{
+    width:520px;
+    height:50px;    
+    cursor:pointer;
+    font-size:14px;
+    background-color:#ffffff;
+    text-indent:20px;
+    font-weight:bold;
+    color:#666666;
+} /* 문의제목 */
+
+.c_consult03 textarea{
+    resize:none;
+    width:520px;
+    height:400px;
+    background-color:#ffffff;
+    text-indent:20px;
+    padding:5px;
+    box-sizing:border-box;
+    font-size:14px;
+    font-weight:bold;
+    color:#666666;
+}
+.c_consult04 p{
+    float:left;
+    height:100px;
+    line-height:100px;
+    font-size:16px;
+    font-weight:bold;
+    margin-left:90px;
+}
+.c_consult04 label{
+    float:left;
+    width:100px;
+    height:100px;
+    background:url(../images/customer/file_upload.png) no-repeat center 10px #ffffff;
+    position:relative;
+    overflow:hidden;
+    margin-left:20px;
+    font-size:0;
+    cursor:pointer;
+}
+
+.c_consult04 label input{
+    font-size:10px;
+    position:absolute;
+    left:-60px;
+    bottom:-50px;
+    cursor:pointer;
+    z-index:5;
+    background-color:transparent;
+}
+
+.consult_r_box{
+    width:520px;
+    float:right;
+    overflow:hidden;  
+}
+
+.consult_r_box >div:not(:first-child){ margin-top:15px; }
+.consult_r_box .cs_input_tle{
+    display:block;
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.c_consult05 input,.c_consult06 input,.c_consult07 input{
+    width:520px;
+    height:50px;
+    font-size:14px;
+    font-weight:bold;
+    text-indent:20px;
+    color:#666666;
+    background-color:#ffffff;
+}
+
+.c_consult08 input[type="checkbox"]{
+    width:18px;
+    height:18px;
+    margin-bottom:3.5px;
+    margin-left:10px;
+}
+.c_consult08 label{
+    font-size:16px;
+    font-weight:bold;
+    padding-left:10px;
+}
+
+.c_consult08 div{
+    width:520px;
+    height:280px;
+    box-sizing:border-box;
+    background-color:#ffffff;
+    padding:15px;
+    font-size:12px;
+    margin-top:10px;
+} /* 개인정보 수집 동의 내용 */
+
+.c_consult08 div dl{ margin-top:10px;}
+
+.c_consult08 div dl dt{ font-weight:bold; font-size:13px;}
+
+.c_consult08 div p:nth-of-type(2){
+
+    text-align:right;
+    color:red;
+} /* *삭제요청 : 1544-5357 */
+
+#consult_btn{
+    margin-top:40px;
+    margin-left:160px;
+    width:200px;
+    height:50px;
+    text-align:center;
+    cursor:pointer;
+    background-color:#ffffff;
+    font-size:18px;
+    font-weight:bold;
+    transition:all 0.3s;
+} /* 상담신청 버튼 */
+
+#consult_btn:hover{
+    background-color:#e20d3a;
+    color:#ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+

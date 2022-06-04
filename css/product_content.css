@@ -1,0 +1,425 @@
+@charset "utf-8";
+
+
+/*pd_search_wrap 전체*/
+#pd_search_wrap{
+    width:100%;
+    height:150px;
+    position:relative;
+    background-color:#e8e8e8;
+}
+
+#pd_search{
+    width:950px;
+    height:45px;
+    margin:0 auto;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+/*제품 검색*/
+#pd_search h2{
+    font-size:20px;
+    float:left;
+    height:45px;
+    line-height:46px;
+    margin-right:25px;
+}
+
+#pd_search > p{
+    float:left;
+    margin-right:15px;
+}
+
+#pd_search > p > select{
+    cursor:pointer;
+    width:203px;
+    height:45px;
+    padding-left:60px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:bold;
+    box-sizing:border-box;
+    appearance:none;
+    background:url(../images/product/select_arrow.png) no-repeat 169px center #ffffff;
+}
+
+#pd_search > p >select::-ms-expand {
+   display: none;
+}
+
+#pd_search .search_btn{
+    width:390px;
+    height:46px;
+    position:relative;
+    float:right;
+    margin-right:0px;
+}
+
+#pd_search .search_btn input{
+    
+    width:390px;
+    height:45px;
+    text-align:center;
+    font-size:14px;
+    border-radius:30px;
+    background-color:#ffffff;
+}
+
+#pd_search .search_btn a{
+    position:absolute;
+    left:5px;
+    top:5px;
+}
+
+
+/*product_wrap 제품소개 전체*/
+#product_wrap{
+    clear:both;
+    width:1050px;
+    margin:100px auto 0 auto;
+}
+
+#product_wrap h2{
+    font-size:30px;
+    height:33px;
+    line-height:33px;
+    text-indent:30px;
+}/*제품소개 txt*/
+
+#product_brand{
+    width:1050px;
+    height:50px;
+    box-sizing:border-box;
+    margin:40px auto 0 auto;
+    position:relative;
+}
+
+#product_brand .brand_arrow_l, #product_brand .brand_arrow_r{
+    margin-top:7px;
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+}  /*브랜드 좌우 화살표*/
+
+
+#product_brand .brand_arrow_l{float:left;} /* < */
+#product_brand .brand_arrow_r{float:right;} /* > */
+
+
+#product_brand #brand_box{
+    width:1000px;
+    height:50px;
+    position:absolute;
+    left:50%;
+    overflow:hidden;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+#product_brand #brand_box ul{
+    width:1400px;
+    height:50px;
+    position:relative;
+}
+
+#product_brand #brand_box ul li{
+    float:left;
+    height:50px;
+    width:200px;
+    text-align:center;
+    line-height:50px;
+    background-color:#dedede;
+    font-size:18px;
+    font-weight:bold;
+}
+
+#product_brand #brand_box ul li a{
+    display:block;
+    width:200px;
+    height:50px;
+}
+#product_brand #brand_box ul li a.brand_select{
+    background-color:#e20d3a;
+    color:#ffffff;
+}
+#product_brand #brand_box ul li a.brand_hover{
+    background-color:#e54f6f;
+    color:#ffffff;
+}
+
+/* 제품 목록 */
+#product_list_wrap{
+    width:1000px;
+    margin:0 auto;
+    padding-top:50px;
+} 
+
+#product_list_wrap .pd_list{
+    float:left;
+    margin-bottom:40px;
+} /* figure tag */
+
+#product_list_wrap figure{ margin-left:80px; }
+
+#product_list_wrap figure:nth-of-type(3n+1){
+    margin-left:0;
+} /* 1, 4, 7.. */
+
+.pd_list .product_img_wrap{
+    width:280px;
+    height:280px;
+    position:relative;
+    cursor:pointer;
+}
+
+ .pd_list .product_img_wrap p{
+    width:280px;
+    height:280px;
+    background-color:#eeeeee;
+} /*제품이미지 부모 p*/
+
+ .pd_list .product_img_wrap p img{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+} /*제품 각 이미지*/
+
+.pd_list .product_img_wrap .product_img_hover{
+    width:280px;
+    height:40px;
+    background-color:rgba(0,0,0,0.1);
+    position:absolute;
+    left:0;
+    bottom:0;
+    opacity:0;
+    transition:all 0.3s;
+} /* + */
+
+.pd_list .product_img_wrap .product_img_hover img{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+
+.pd_list .product_img_wrap:hover .product_img_hover{opacity:1;}
+
+.pd_list .product_txt{margin-top:10px;}
+
+.pd_list .product_txt h3{
+    font-size:18px;
+    letter-spacing:0.5px;
+    font-weight:bold;
+    height:18px;
+    line-height:18px;
+}/*제품 이름*/
+
+.pd_list .product_txt p{
+    margin-top:10px;
+    font-size:14px;
+    width:280px;
+    height:45px;
+    line-height:1.6em;
+    color:#707070;
+    overflow:hidden;
+} /*제품 설명*/
+
+.pd_list .product_txt p span{
+    width:280px;
+    display:block;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+/*product_page_num*/
+#product_page_num{
+    clear:both;
+    width:388px;
+    height:18px;
+    line-height:18px;
+    font-size:18px;
+    margin:50px auto 0 auto;
+    text-align:center;
+}
+
+#product_page_num a{
+    color:#999999;
+}
+
+#product_page_num .page_active{
+    color:#333333;
+    font-weight:bold;
+}
+
+#product_page_num a:hover{
+    color:#666666;
+}
+
+#product_page_num a+a{
+    padding-left:10px;
+}
+
+
+/*product_mark_wrap 인증마크 전체*/
+#product_mark_wrap{
+    height:938px;
+    background:url(../images/product/mark_bg.png) repeat-x left center;
+    margin-top:200px;
+}
+
+#product_mark{
+    width:1320px;
+    height:938px;
+    margin:0 auto;
+}
+
+#product_mark h2{
+    font-size:30px;
+    margin-bottom:54px;
+    height:33px;
+    line-height:33px;
+} /*친환경 제품 인증 마크*/
+
+#product_mark > div{
+    width:1080px;
+    height:353px;
+    margin:0 auto;
+/*    border:1px solid red;*/
+}
+
+#product_mark #mark_bottom{
+    margin-top:103px;
+}
+#product_mark > div > figure{
+    float:left;
+}
+
+#product_mark > div > figure + figure{
+    margin-left:120px;
+}
+
+#product_mark > div > figure > p{
+    width:280px;
+    height:280px;
+    overflow:hidden;
+    border-radius:50%;
+    
+    box-shadow:1px 1px 5px rgba(0,0,0,0.5);
+}
+
+#product_mark > div > figure > figcaption{
+    margin-top:43px;
+    font-size:20px;
+    text-align:center;
+    font-weight:bold;
+} /*인증마크 이름*/
+#product_mark > div > figure > p > img{transition:all 0.3s;}
+
+#product_mark > div > figure:hover > p > img{
+    transform:scale(1.05);
+}
+
+
+/*painting_guide_wrap 페인팅 가이드 전체*/
+#painting_guide_wrap{
+    width:1320px;
+    height:692px;
+    margin:200px auto 0 auto;
+/*    border:1px solid red;*/
+}
+
+#painting_guide_wrap h2{
+    font-size:30px;
+    margin-bottom:60px;
+    height:33px;
+    line-height:33px;
+} /*페인팅 가이드 txt*/
+
+#painting_guide{
+    width:1320px;
+    height:600px;
+    margin:0 auto 0 auto;
+/*    border:1px solid red;*/
+}
+
+#painting_guide .guide_box{
+    float:left;
+    width:440px;
+    height:600px;
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+#painting_guide .guide_box img{
+    opacity:0.7;
+    transition:all 0.3s;
+} /*페인팅 가이드 각 이미지*/
+
+#painting_guide .guide_box .guide_txt{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+    width:440px;
+    transition:all 0.3s;                        
+}
+
+#painting_guide .guide_box .guide_txt h3{
+    font-size:35px;
+    height:34px;
+    line-height:34px;
+    margin-bottom:15px;
+    letter-spacing:4px;
+/*    border:1px solid red;*/
+/*    color:#e20d3a;*/
+    font-family:Arial,sans-seif;
+    letter-spacing:2px;
+} /*How to use Paint*/
+
+#painting_guide .guide_box .guide_txt p{
+    font-size:25px;
+    height:24px;
+    line-height:24px;
+    font-weight:bold;
+/*    color:#4a4a4a;*/
+}
+
+#painting_guide .guide_box:hover .guide_txt{
+    top:80%;
+    opacity:0;
+}
+
+#painting_guide .guide_box:hover img{opacity:1;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

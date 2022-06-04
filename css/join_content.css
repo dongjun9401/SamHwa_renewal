@@ -1,0 +1,528 @@
+@charset "utf-8";
+
+/*join_box_wrap 회원가입 1페이지 내용 전체*/
+
+#join_box_wrap{
+    width:800px;
+    overflow:hidden;
+    box-sizing:border-box;
+    padding:54px 60px 60px 60px;
+    margin:80px auto 200px auto;
+    background:url(../images/join/bg01.png) repeat-x left top #f9f9f9;
+    position:relative;
+    
+} /*회원가입 기본 틀*/
+
+#join_box{
+    width:680px;
+    margin:0 auto;
+    border:3px solid #000000;
+    background-color:#ffffff;
+    box-sizing:border-box;
+    overflow:hidden;
+    padding-bottom:80px;
+} /*회원가입 form*/
+
+#join_box .join_next_page{
+    position:absolute;
+    border:none;
+    bottom:15px;
+    right:16px;
+    width:85px;
+    height:25px;
+    font-size:20px;
+    font-weight:bold;
+    line-height:20px;
+    text-align:left;
+    cursor:pointer;
+} /*NEXT*/
+
+#join_box .join_next_page::after{
+    content:"\00BB";
+    font-size:30px;
+    padding-left:5px;
+    transition:padding 0.3s;
+}
+
+#join_box .join_next_page:hover::after{ padding-left:10px; }
+
+#join_box .join_prev_page{
+    position:absolute;
+    border:none;
+    bottom:15px;
+    left:16px;
+    width:85px;
+    height:25px;
+    font-size:20px;
+    font-weight:bold;
+    line-height:20px;
+    text-align:right;
+    cursor:pointer;
+} /*NEXT*/
+
+#join_box .join_prev_page::before{
+    content:"\00AB";
+    font-size:30px;
+    display:inline-block;
+    width:10px;
+    height:25px;
+    padding-right:10px;
+    transition:padding 0.3s;
+}
+
+#join_box .join_prev_page:hover::before{ padding-right:15px; }
+
+#join_box h2{
+    font-size:50px;
+    height:50px;
+    line-height:50px;
+    margin-top:5px;
+    margin-left:40px;    
+} /*Samhwa*/
+
+#join_box h2 span{
+    font-size:30px;
+    margin-left:12px;
+}/*회원가입*/
+
+#join_box .join_txt_hide{ display:none;}
+/*fieldset legend  텍스트 공통*/
+
+#effect_date_wrap{
+    margin-top:60px;
+    margin:60px 40px 0 40px;
+} /*개인정보 유효기간 박스*/
+
+#effect_date_wrap h3{
+    font-size:18px;
+    height:20px;
+    line-height:20px;
+} /*개인정보 유효기간*/
+
+#effect_date_wrap p{
+    font-size:16px;
+    margin-top:15px;
+    text-align:center;
+} /*기간동안 로그인 이력이 없으면 휴먼 회원으로 전환됩니다.*/
+
+#effect_date_wrap .effect_date_chk{
+    margin-top:15px;
+    font-size:16px;
+    padding-top:10px;
+    overflow:hidden;
+    border-top:2px solid #000000;
+}
+
+#effect_date_wrap .effect_date_chk h4{
+    float:left;
+    margin-left:15px;
+} /*유효기간*/
+
+#effect_date_wrap .effect_date_chk .date_chk_wrap{float:right;} /*1년 , 2년 , 3년*/
+
+#effect_date_wrap .effect_date_chk .date_chk_wrap label+label{margin-left:10px;}
+#effect_date_wrap .effect_date_chk .date_chk_wrap input{margin-top:-2px; margin-right:8px;}
+
+#join_agree_wrap{
+    clear:both;
+    margin:60px auto 0 auto;
+    width:600px; 
+} /*약관 동의 박스*/
+
+#join_agree_wrap h3{
+    font-size:18px;
+    height:20px;
+    line-height:20px;
+    float:left;
+    margin-bottom:10px;
+} /*약관동의*/
+
+#join_agree_wrap > label{
+    float:right;
+    font-size:16px;
+} /*약관동의(전체)*/ 
+
+#join_agree_wrap > label > input{
+    margin-top:-3px; 
+    margin-right:8px; 
+    transform:scale(1.3);
+}  /*약관동의(전체) 체크박스*/
+
+#agree_sub_wrap{
+    clear:both;
+    box-sizing:border-box;
+    border-top:2px solid #000000;
+} /*각 약관 부분 ul*/
+
+#agree_sub_wrap .agree_sub{
+    margin:0 20px;
+    border-bottom:2px solid #000000;
+    overflow:hidden;
+    padding-top:18px;   
+} /*li*/
+
+#agree_sub_wrap .agree_sub label{
+    float:left;
+    font-size:16px;
+    margin-bottom:20px;   
+}
+
+#agree_sub_wrap .agree_sub label input{
+    transform:scale(1.2);
+    margin-top:-2px;
+    margin-right:8px;
+    margin-left:10px;
+} /*각 약관 checkbox*/
+
+#agree_sub_wrap .agree_sub img{
+    float:right;
+    cursor:pointer;
+    margin-top:4px;
+    margin-right:10px;
+} /* 우측 쇼/하이드 아이콘 이미지 */
+
+#agree_sub_wrap .agree_sub .agree_txt_box{
+    clear:both;
+    width:560px;
+    height:460px;
+    border:1px solid #666666;
+    overflow-y:scroll;
+    box-sizing:border-box;
+    margin-bottom:20px;
+    margin-top:20px;
+    padding:0 10px;
+    box-sizing:border-box;
+} /*약관 내용*/
+#agree_sub_wrap .agree_sub .agree_txt02{
+    text-align:justify;
+} /*약관2 텍스트*/
+
+#agree_sub_wrap .agree_sub .agree_txt03{
+    height:175px;
+} /* 약관3 텍스트 div */ 
+
+.agree_txt03 ul{padding:0 10px;}
+
+.agree_txt03 ul li{
+    list-style:disc;
+    margin-left:10px;
+    line-height:1.8em;
+}
+
+.agree_txt03 ul li+li{margin-top:10px;}
+
+
+#agree_sub_wrap .agree_sub .agree_txt_box::-webkit-scrollbar{width:8px;}
+#agree_sub_wrap .agree_sub .agree_txt_box::-webkit-scrollbar-track{background-color:#eaeaea; border-radius:10px;}
+#agree_sub_wrap .agree_sub .agree_txt_box::-webkit-scrollbar-thumb{background-color:#000000; border-radius:10px;}
+
+/*-webkit- 크롬 사파리 / -ms- ie /-o- 또는 -webkit 오페라 / -moz- 파이어폭스 */
+
+/*회원가입 페이지2*/
+#join_page2{
+    width:674px;
+    padding:0 90px;
+    box-sizing:border-box;
+    margin:50px auto 0 auto;
+}
+
+#join_page2 label{
+    font-size:16px;
+    font-weight:bold;
+} 
+
+#join_page2 input{
+    border:2px solid #666666;
+    box-sizing:border-box;
+}
+
+/* 아이디, 비밀번호, 비밀번호 확인, 이름 */
+.box_type01{
+    margin-top:10px;
+}
+
+.box_type01 label{
+    display:block;
+    text-indent:10px;
+    margin-bottom:8px;
+}
+
+.box_type01 input{
+    width:100%;
+    height:45px;
+    border-radius:10px;
+    text-indent:10px;
+}
+
+/* 이메일 박스*/
+.mail_box{
+    margin-top:10px;
+    position:relative;
+}
+.mail_box label{
+    margin-bottom:5px;
+    display:block;
+    text-indent:10px;
+} /* 이메일 txt */
+
+.mail_box input[type="email"]{
+    height:40px;
+    border-radius:8px;
+    text-indent:10px;
+}
+
+.mail_box .select_box{
+    display:inline-block;
+    height:36px;
+    border:2px solid #666666;
+    border-radius:8px;
+    position:absolute;
+    right:0;
+    bottom:0;
+    overflow:hidden;
+}
+
+.mail_box .select_box select{
+    border:none;
+    height:36px;
+    line-height:36px;
+    outline:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* 전화번호 입력 , 인증*/
+.tel_box{margin-top:10px;}
+
+.tel_box label{padding-left:10px;}
+
+.tel_box input{border-radius:8px;}
+
+.tel_box input[type="button"]{
+    width:160px;
+    height:45px;
+    text-align:center;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.tel_box01{
+    margin:5px 0;
+    height:45px;
+}
+
+.tel_box01 input{
+    float:left;
+    height:45px;
+}
+
+.tel_box01 input:first-child{
+    text-indent:10px;
+    width:320px;
+}
+.tel_box01 input:last-child{
+    float:right;
+}
+.tel_box02{
+    clear:both;
+
+}
+.tel_box02 input:first-child{
+    height:45px;
+    width:200px;
+    text-align:center;
+    margin-left:120px;
+}
+
+.tel_box02 input:last-child{float:right;}
+
+.address_box{
+    clear:both;
+    margin-top:10px;
+}
+.address_box label{text-indent:10px;}
+
+.address_box label,.address_box > input{display:block;}
+
+.address_box > input,.address_box p input{
+    height:45px;
+    border-radius:8px;
+}
+
+.address_box > input{
+    width:100%;
+    margin-bottom:5px;
+    text-indent:10px;
+}
+
+.address_box p{
+    margin:5px 0;
+    height:45px;
+}
+
+.address_box p input:first-child{
+    float:left;
+    width:320px;
+    text-indent:10px;
+}
+
+.address_box p input:last-child{
+    width:160px;
+    float:right;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* 생년 월 일 입력 */
+.birth_box{
+    margin-top:10px;
+    float:right;
+/*    border:1px solid red;*/
+}
+.birth_box label{
+    display:block;
+    text-indent:10px;
+    margin-bottom:5px;
+}
+
+.birth_box input{
+    width:200px;
+    height:39px;
+    border:2px solid #666666;
+    border-radius:8px;
+    text-indent:5px;
+}
+.gender_box{
+    margin-top:10px;
+    float:left;
+/*    border:1px solid blue;*/
+}
+.gender_box p{
+    margin-bottom:5px;
+    font-size:16px;
+    font-weight:bold;
+    text-indent:10px;
+    
+} /* 성별 선택 */
+
+.gender_box label{
+    display:inline-block;
+    width:100px;
+    height:35px;
+    text-align:center;
+    line-height:35px;
+    border:2px solid #666666;
+    border-radius:8px;
+    cursor:pointer;
+}
+.gender_box input:checked + label{
+    border-color:#e95977;
+    color:#e95977;
+}
+
+.gender_box input{ display:none; }
+
+
+#join_complete_btn{
+    clear:both;
+    width:100%;
+    height:75px;
+    margin-top:50px;
+    border-radius:10px;
+    font-size:23px;
+    font-weight:bold;
+    border:none;
+    background-color:#eaeaea;
+    cursor:pointer;
+    transition:all 0.3s;
+}
+
+#join_complete_btn:hover{
+    background-color:#e95977;
+    color:#ffffff;
+}
+
+ 
+/* join_page3 회원가입 마지막 페이지*/
+
+#join_page3 p:nth-of-type(1){
+    margin-top:120px;
+    font-size:25px;
+    text-align:center;
+    font-weight:bold;
+}
+
+#join_page3 p:nth-of-type(2){
+    margin-top:50px;
+    font-size:22px;
+    text-align:center;
+    line-height:1.6em;
+}
+
+#join_page3 ul{
+    height:60px;
+    width:500px;
+    margin: 60px auto 0 auto;
+}
+
+#join_page3 ul li{
+    width:240px;
+    height:60px;
+    line-height:60px;
+    font-size:25px;
+    float:left;
+    border-radius:10px;
+    overflow:hidden;  
+}
+
+#join_page3 ul li:last-child{ float:right; }
+
+#join_page3 ul li a{
+    width:240px;
+    height:60px;
+    display:block;
+    text-align:center;
+    font-weight:bold;
+    background-color:#eaeaea;
+}
+
+#join_page3 ul li:hover a{
+    background-color:#e95977;
+    color:#ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

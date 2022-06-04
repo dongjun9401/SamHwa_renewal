@@ -1,0 +1,457 @@
+@charset "utf-8";
+
+/*keyframes animation*/
+
+@keyframes ani_bar1{
+    from{height:0px; bottom : -143px;}
+    to{height:71px; bottom : -72px;}
+}
+
+@keyframes ani_bar2{
+    from{height:0px; bottom : -143px;}
+    to{height:109px; bottom : -34px;}
+}
+@keyframes ani_bar3{
+    from{height:0px;}
+    to{height:63px;}
+}
+
+/*부채비율 그래프2 애니메이션 */
+@keyframes ani_bar2_1{
+    from{height:0px; bottom : -286px;}
+    to{height:159px; bottom : -127px;}
+}
+
+@keyframes ani_bar2_2{
+    from{height:0px; bottom : -286px;}
+    to{height:176px; bottom : -110px;}
+}
+
+@keyframes ani_bar2_3{
+    from{height:0px; bottom : -286px;}
+    to{height:209px; bottom : -77px;}
+}
+
+/*ROE 그래프4 애니메이션 */
+@keyframes ani_bar4_1{
+    from{height:0px; bottom : -143px;}
+    to{height:73px; bottom : -70px;}
+}
+
+@keyframes ani_bar4_2{
+    from{height:0px; bottom : -143px;}
+    to{height:114px; bottom : -29px;}
+}
+
+@keyframes ani_bar4_3{
+    from{height:0px;}
+    to{height:63px;}
+}
+
+
+
+
+
+/*main_graph_wrap 삼화페인트공업(주) 주요지표 */
+#main_graph_wrap{
+    width:1240px;
+    height:800px;
+    margin:100px auto 0 auto;
+/*    border:1px solid red;*/
+} 
+
+#main_graph_wrap h2{
+    font-size:30px;
+    height:33px;
+    line-height:33px;
+    margin-bottom:33px;
+} /*삼화페인트공업(주) 주요지표*/
+
+#main_graph{
+    width:1240px;
+    height:742px;
+/*    border:1px solid blue;*/
+}
+
+
+.main_graph_box{
+    width:600px;
+    height:350px;
+    background-color:#f1f1f1;
+    position:relative;
+    box-sizing:border-box;
+    padding:32px 40px;
+    float:left;
+    transition:background 0.3s;
+} /* 각 그래프 박스 영역 공통 */
+
+.main_graph_box:hover{
+    background-color:#ffeaea;
+}
+.main_graph02{
+    float:right;
+    margin-bottom:40px;
+} /*부채비율 박스*/
+
+.main_graph03{
+    clear:both;
+    float:left;
+} /*ROA 박스*/
+
+.main_graph04{float:right;} /*ROE 박스*/
+
+.main_graph_box .graph_txt{float:left;} /* 좌측 텍스트 공통*/
+
+.main_graph_box .graph_txt h3{
+    font-size:20px;
+    height:22px;
+    line-height:22px;
+    margin-bottom:5px;
+}
+
+.main_graph_box .graph_txt p{
+    font-size:16px;
+    height:18px;
+    line-height:18px;
+}
+
+.main_graph_box .graph_stick_box{
+    float:right;
+    width:320px;
+    height:286px;
+    border-left:2px solid #000000;
+    border-bottom:2px solid #000000;
+    position:relative;
+} /* 그래프 표 공통*/
+
+.main_graph_box .graph_stick_box .graph_x{
+    width:320px;
+    height:18px;
+    position:absolute;
+    bottom:-20px;
+    left:-1px;
+} /* 2019 , 2020, 2021 ul 공통*/
+
+.main_graph_box .graph_stick_box .graph_x li{
+    float:left;
+    width:50px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.main_graph_box .graph_stick_box .graph_x li:nth-child(1){margin-left:40px;}
+.main_graph_box .graph_stick_box .graph_x li+li{margin-left:45px;}
+
+
+
+.main_graph_box .graph_stick_box > div{
+    width:320px;
+    height:143px;
+/*    background-color:pink;*/
+    border-bottom:2px solid #000000;
+
+}
+
+.main_graph_box .graph_stick_box > div > div{
+    float:left;
+    background-color:#666666;
+    width:50px;
+    position:relative;
+    
+    
+}
+.main_graph_box .graph_stick_box > div > .bar1{
+    left:40px;
+    bottom:-71px;  /*-71*/
+    height:72px;
+    animation:ani_bar1 2s linear;
+}
+.main_graph_box .graph_stick_box > div > .bar2{
+    height:109px;
+    left:85px;
+    bottom:-34px; /*-35*/
+    animation:ani_bar2 2s linear;
+    
+}
+.main_graph_box .graph_stick_box > div > .bar3{
+    background-color:#3434ff;
+    float:right;
+    right:40px;
+    bottom:-145px; 
+    height:63px;
+    animation:ani_bar3 2s linear;
+}
+
+.main_graph_box .graph_stick_box > div > div >p{
+    position:absolute;
+    left:50%;
+    transform:translate(-50%,0);
+}
+.main_graph_box .graph_stick_box > div > .bar1 > p{
+    top:-20px;
+}
+.main_graph_box .graph_stick_box > div > .bar2 > p{
+    top:-20px;
+}
+.main_graph_box .graph_stick_box > div > .bar3 > p{
+    bottom:-20px;
+}
+
+/*main_graph02 부채비율*/
+.main_graph02 .graph_stick_box > div{
+    width:320px;
+    height:286px;
+/*    background-color:pink;*/
+    border-bottom:2px solid #000000;
+
+}
+
+.main_graph02 .graph_stick_box > div > div{position:relative; float:left;}
+
+.main_graph02 .graph_stick_box > div > .bar2_1{
+    left:40px;
+    bottom:-127px; /* 286px ~ -127px*/
+    height:159px; /*159px*/
+    animation:ani_bar2_1 2s linear;
+}
+
+.main_graph02 .graph_stick_box > div > .bar2_2{
+    left:85px;
+    bottom:-110px; /*-110px*/
+    height:176px;
+    animation:ani_bar2_2 2s linear;
+}
+
+.main_graph02 .graph_stick_box > div > .bar2_3{
+    right:40px;
+    bottom:-77px; /*-77px*/
+    height:209px;
+    float:right;
+    background-color:#e20d3a;
+    animation:ani_bar2_3 2s linear;
+}
+
+.main_graph02 .graph_stick_box > div > div > p{
+    position:absolute;
+    left:50%;
+    transform:translate(-50%,0);
+    top:-20px;
+}
+
+/*main_graph04 ROE*/
+
+.main_graph04 .graph_stick_box > div > div{
+    float:left;
+    background-color:#666666;
+    width:50px;
+    position:relative;
+}
+.main_graph04 .graph_stick_box > div > .bar4_1{
+    left:40px;
+    bottom:-70px;  /*-70px*/
+    height:73px;
+    animation:ani_bar4_1 2s linear;
+}
+.main_graph04 .graph_stick_box > div > .bar4_2{
+    height:114px;
+    left:85px;
+    bottom:-29px; /*-29px*/
+    animation:ani_bar4_2 2s linear;
+    
+}
+.main_graph04 .graph_stick_box > div > .bar4_3{
+    background-color:#3434ff;
+    float:right;
+    right:51px;
+    bottom:-145px; /*-145px*/
+    height:63px;
+    animation:ani_bar4_3 2s linear;
+}
+
+.main_graph04 .graph_stick_box > div > div >p{
+    position:absolute;
+    left:50%;
+    transform:translate(-50%,0);
+}
+.main_graph04 .graph_stick_box > div > .bar4_1 > p{
+    top:-20px;
+}
+.main_graph04 .graph_stick_box > div > .bar4_2 > p{
+    top:-20px;
+}
+.main_graph04 .graph_stick_box > div > .bar4_3 > p{
+    bottom:-20px;
+}
+
+/*official_post_wrap 주요 공고*/
+
+#official_post_wrap{
+    width:1240px;
+    margin:200px auto 0 auto;
+/*    border:1px solid red;*/
+    position:relative;
+}
+
+#official_post_wrap h2{
+    font-size:30px;
+    height:33px;
+    line-height:33px;
+    margin-bottom:33px;
+} /*삼화페인트공업(주) 주요공고*/
+
+#official_post_wrap .post_btn{
+    position:absolute;
+    width:50px;
+    height:50px;
+    border:none;
+    background-color:transparent;
+    bottom:100px;
+    cursor:pointer;
+    
+
+} /*주요 공고 문서 이동 버튼*/
+
+#official_post_wrap .post_btn_l{
+    left:-50px;
+    transition:left 0.3s;
+}
+#official_post_wrap .post_btn_l:hover{
+    left:-55px;
+}
+
+#official_post_wrap .post_btn_r{
+    right:-50px;
+    transition:right 0.3s;
+}
+#official_post_wrap .post_btn_r:hover{
+    right:-55px;
+}
+
+
+#document_wrap{
+    width:1240px;
+    height:250px;
+/*    border:1px solid green;*/
+    overflow:hidden;
+    position:relative;
+}
+
+#document_wrap ul{
+    width:2290px;
+    height:250px;
+    position:absolute;
+    left:0;
+    top:0;
+/*    background-color:yellow;*/
+}
+
+#document_wrap ul li{
+    width:190px;
+    height:250px;
+    float:left;
+}
+
+#document_wrap ul li+li{margin-left:20px;}
+
+#document_wrap ul li a{
+    display:block;
+    width:190px;
+    height:250px;
+    position:relative;
+    background-color:#f1f1f1;
+    transition:background 0.3s;
+}
+#document_wrap ul li a::after{
+    content:"";
+    position:absolute;
+    width:64px;
+    height:64px;
+    background:url(../images/ir/pdf_bg.png) no-repeat center;
+    display:block;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    opacity:0;
+    transition:all 0.3s;
+    
+}
+
+#document_wrap ul li a:hover{
+    background:#ffeaea;
+
+}
+#document_wrap ul li a:hover::after{
+    opacity:1;
+}
+
+#document_wrap ul li a h3{
+    position:absolute;
+    font-size:20px;
+    left:18px;
+    top:20px;
+    line-height:1.5em;
+}
+
+#document_wrap ul li a p{
+    position:absolute;
+    font-size:20px;
+    right:22px;
+    bottom:13px;
+    color:#666666;
+}
+
+
+/*ir_table_wrap 주요재무 상태표*/
+#ir_table_wrap{
+    width:1240px;
+    margin:200px auto 0 auto;
+}
+#ir_table_wrap h2{
+    font-size:30px;
+    height:33px;
+    line-height:33px;
+    margin-bottom:33px;
+}
+
+
+#ir_table{
+    width:1000px;
+    margin:0 auto;
+    border-collapse:collapse;
+} /*table 태그*/
+
+#ir_table caption{
+    padding-bottom:20px;
+}
+#ir_table caption p{
+    font-size:20px;
+    height:22px;
+    line-height:22px;
+    float:left;
+}
+
+#ir_table caption span{
+    float:right;
+    font-size:16px;
+}
+
+#ir_table tr th, #ir_table tr td{
+    width:250px;
+    height:40px;
+    border:1px solid #dbdbdb;
+    vertical-align:middle;
+    box-sizing:border-box;
+    
+}
+
+#ir_table tr td{
+    text-align:right;
+    padding-right:10px;
+/*    transition:all 0.3s;*/
+}
+
+#ir_table tr:nth-of-type(1) th{
+    background-color:#f5f5f5;
+    border-top:2px solid #333333;
+    border-bottom:2px solid #333333;
+}

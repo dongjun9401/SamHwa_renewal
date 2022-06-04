@@ -1,0 +1,463 @@
+@charset "utf-8";
+
+/*ncs_color_wrap 전체*/
+#ncs_color_wrap{
+    width:1320px;
+    margin:100px auto 0 auto;
+    overflow:hidden;
+}
+
+#ncs_contents{
+    width:1320px;
+    overflow:hidden;
+}
+
+.ncs_con{
+    width:1320px;
+    height:420px;
+    clear:both;
+    position:relative;
+    
+} /*공통 사진 + 텍스트 div*/
+
+.con2_img, .con4_img{float:left;} /*자연추출.. 이미지, 인지하기 쉬운.. 이미지*/
+.con1_img, .con3_img, .con5_img{float:right;} /*인간의 눈.. 이미지, 국제적인.. 이미지*/
+
+.ncs_con .con_img{
+    width:560px;
+    height:420px;
+    cursor:pointer;
+    border-radius:20px;
+    transition:all 0.4s;
+    overflow:hidden;
+} /* 이미지 div 공통 */
+
+.ncs_con .con_img:hover{ border-radius:40px;}
+.ncs_con .con_img img{ transition:transform 0.5s }
+.ncs_con .con_img:hover img{ transform:scale(1.1); }
+
+.ncs_con .con_txt h3{
+    font-size:26px;
+    height:30px;
+    line-height:30px;
+    width:439px;
+    text-align:center;
+    margin:0 auto 15px auto;   
+} /*각 ncs_con h3 제목 공통*/
+
+.ncs_con .con_txt p{
+    text-indent:10px;
+    font-size:17px;
+    color:#333333;
+    width:439px;
+    margin:0 auto;
+    line-height:1.5em;
+    text-align:justify;
+} /*ncs_con txt 내용 공통*/
+
+.ncs_con1 .con1_txt{
+    float:left;
+    width:576px;
+    margin-left:40px;
+} /*ncs_con1 부분*/
+
+.ncs_con1 .con1_txt h2{ 
+    font-size: 50px;
+    height:56px;
+    line-height:56px;
+    text-align:center;
+    margin-bottom:40px;
+} /*SAMHWA-NCS Color*/
+
+.ncs_con1 .con1_txt h2 b{color:#b20000;} /*SAMHWA*/
+
+.ncs_con1 .con1_txt h3{
+    font-size:27px;
+    height:70px;
+    line-height:1.2em;
+    text-align:left;
+    color:#333333;
+} /*NCS(Natural Color System)컬러는 자연의..*/
+
+.ncs_con1 .con1_txt p{ letter-spacing:0.5px; }
+
+.ncs_con2 .con2_txt, .ncs_con4 .con4_txt{
+    position:absolute;
+    right:100px;
+    top:50%;
+    transform:translateY(-50%);
+    width:560px;
+    float:right;
+}
+
+.ncs_con3 .con3_txt, .ncs_con5 .con5_txt{
+    width:560px;
+    position:absolute;
+    left:100px;
+    top:50%;
+    transform:translateY(-50%);
+    float:left;
+}
+
+.con5_img{ position:relative;}
+
+#ncs_color_code{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:10;
+    background-color:rgba(0,0,0,0.7);
+} /* con5_img 하위 div */
+
+#ncs_color_code ul{
+    width:560px;
+    height:55px;
+    margin-top:180px;
+    color:#ffffff;
+}
+
+#ncs_color_code ul li{
+    float:left;
+    height:55px;
+    font-size:50px;
+    margin-left:35px;
+    position:relative;
+    font-weight:bold;
+    line-height:55px;
+    padding-bottom:10px;
+    color:#bbbbbb;
+}
+
+#ncs_color_code ul .word01{ margin-left:30px; }
+
+#ncs_color_code ul .word04, #ncs_color_code ul .word05{ margin-left:30px;}
+
+#ncs_color_code ul li p{
+    position:absolute;
+    font-weight:normal;
+    left:50%;
+    line-height:1.5em;
+    text-align:center;
+    transform:translateX(-50%);
+    color:#ffffff;
+}
+
+.word01, .word03{ border-bottom:2px solid #ffffff;}
+.word02, .word05{ border-top:2px solid #ffffff;}
+.word01 p{
+    font-size:14px;
+    width:120px;
+    bottom:-45px;
+}
+
+.word02 p{
+    font-size:14px;
+    width:120px;
+    top:-67px;
+}
+
+.word03 p{
+    width:200px;
+    bottom:-45px;
+    font-size:13px;
+}
+
+.word03 p span{font-size:14px;}
+.word03 p span:nth-of-type(2){ margin-left:10px; }
+.word05 p{
+    font-size:14px;
+    top:-25px;
+    width:100px;
+}
+
+/*ncs_ex_wrap 컬러 예시*/
+#ncs_ex_wrap{
+    clear:both;
+    margin-top:100px;
+    width:3360px;
+    height:400px;
+}
+#ncs_ex_wrap .ncs_ex_box{
+    width:840px;
+    height:400px;
+    float:left;
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+}  /* 컬러 예시 각 div */
+
+.ncs_ex_box01{background:url(../images/color/ncs_ex01_.png) no-repeat;}
+.ncs_ex_box02{background:url(../images/color/ncs_ex02_.png) no-repeat;}
+.ncs_ex_box03{background:url(../images/color/ncs_ex03_.png) no-repeat;}
+.ncs_ex_box04{background:url(../images/color/ncs_ex04_.png) no-repeat;}
+
+.ncs_ex_box .excolor{
+    width:160px;
+    height:400px;
+}
+
+.ncs_ex_box .excolor01{background-color:rgba(88, 184, 204 ,0.8);} 
+.ncs_ex_box .excolor02{background-color:rgba(189, 200, 210 ,0.8);} 
+.ncs_ex_box .excolor03{background-color:rgba(156, 191, 154 ,0.8);} 
+.ncs_ex_box .excolor04{background-color:rgba(98, 71, 66 ,0.8);}
+
+.ncs_ex_box .excolor .excolor_tle{
+    position:absolute;
+    left:0;
+    top:300px;
+    width:160px;
+    height:100px;
+    background-color:rgba(255,255,255,0.6);
+    text-align:center;
+    line-height:100px;
+    font-size:18px;
+    color:#333333;
+    font-weight:bold; 
+} /* 각 컬러 이름 */
+
+.ncs_ex_box .ex_txt{
+    position:absolute;
+    left:200px;
+    bottom:30px;
+    color:#ffffff;
+    font-weight:bold;
+    font-size:20px;
+} /* 컬러 코드 */
+
+
+/*color_design_center_wrap 컬러 디자인 센터 전체*/
+#color_design_center_wrap{
+    clear:both;
+    width:1900px;
+    overflow:hidden;
+    margin:200px auto 0 auto;
+}
+
+#design_center01{
+    width:1900px;
+    height:720px;
+    position:relative;
+}
+
+#design_center01 h2{
+    position:relative;
+    top:20px;
+    left:340px;
+    height:50px;
+    font-size:45px;
+    line-height:50px;
+    z-index:10;
+} /*Samhwa Paints Color Design Center*/
+
+#design_center01 .design_center_txt1{
+    width:1100px;
+    height:670px;
+    margin:0 auto;
+}
+
+#design_center01 .design_center_txt1 p{
+    margin-top:30px;
+    float:right;
+    font-size:18px;
+    font-weight:bold;
+    line-height:1.6em;
+    color:#333333;
+} /*우리는 늘 컬러라는 공간..*/
+
+#design_center02{
+    clear:both;
+    width:1900px;
+    height:843px;
+    margin-top:200px;
+    background:url(../images/color/color_center_bg02.png) no-repeat left bottom;
+}
+
+#design_center02 .design_center_con2{
+    width:1200px;
+    margin-left:420px;
+}
+
+.design_center_con2 .dc_txt_box02{
+    margin-top:30px;
+    width:1200px;
+    overflow:hidden;
+    color:#ffffff;
+}
+
+.design_center_con2 .dc_txt_box02 h3{
+    height:34px;
+    font-size:30px;
+    line-height:30px;
+    float:left;
+} /* 컬러 디자인 */
+
+.design_center_con2 .dc_txt_box02 p{
+    font-size:18px;
+    float:left;
+    margin-left:40px;
+    line-height:1.6em;   
+}
+
+#design_center03{
+    clear:both;
+    height:500px;
+    width:1900px;
+    background:url(../images/color/color_center_bg03.png) no-repeat left bottom;
+    margin-top:200px;
+}  /* 컬러 컨설팅 div*/
+
+.dc_con_box03{
+    width:1200px;
+    height:500px;
+    margin:0 auto;
+}
+
+.con_box03_l{
+    width:580px;
+    height:500px;
+    float:left;
+}
+
+.con_box03_l .dc_txt3_1{
+    width:580px;
+    height:182px;
+}
+
+.con_box03_l .dc_txt3_1 h3{
+    box-sizing:border-box;
+    padding-top:76px;
+    font-size:30px;
+}
+
+.con_box03_l .dc_txt3_1 p{
+    margin-top:30px;
+    font-size:18px;
+    line-height:1.6em;
+    color:#333333;
+}
+
+.con_box03_l .dc_txt3_2{
+    width:580px;
+    margin-top:38px;
+}
+
+.con_box03_l .dc_txt3_2 ul{
+    margin-top:80px;
+    float:left;
+    font-size:18px;
+    color:#333333;
+    margin-left:50px;
+    font-weight:bold;
+}
+
+.con_box03_l .dc_txt3_2 ul li+li{ margin-top:20px; }
+
+.con_box03_l .dc_txt3_2 img{ float:right; }
+
+.con_box03_r{
+    float:right;
+    width:600px;
+    height:412px;
+}
+
+
+#design_center04{
+    clear:both;
+    width:1400px;
+    height:450px;
+    margin:200px auto 0 auto;
+} /* 컬러 커뮤니케이션 div*/
+
+.dc4_img_box{
+    float:left;
+    width:700px;
+    height:450px;
+    position:relative;
+}
+
+.dc4_img_box img{
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+#design_center04 .txt4_wrap{
+    float:right;
+    width:700px;
+    height:450px;
+    position:relative;
+}
+
+
+.txt4_wrap .design_center_txt4{
+
+    margin-top:100px;
+    margin-left:40px;
+    overflow:hidden;
+}
+
+.txt4_wrap .design_center_txt4 h3{
+    float:left;
+    height:34px;
+    font-size:30px;
+    line-height:30px;
+    padding-top:2px;
+} /* 컬러 커뮤니케이션 */
+
+.txt4_wrap .design_center_txt4 p{
+    float:left;
+    width:380px;
+    margin-left:25px;
+    font-size:18px;
+    font-weight:bold;
+    line-height:1.6em;
+    color:#333333;
+} /* 컬러 마케팅과 커뮤니케이션 활동을 통해 ... */
+
+.design_center_txt4_sub{
+    clear:both;
+    margin-left:40px;
+    margin-top:100px;
+    width:400px;
+    height:130px;
+    overflow:hidden;
+}
+
+.design_center_txt4_sub ul{
+    width:1200px;
+    height:130px;
+}
+
+.design_center_txt4_sub ul li{
+    float:left;
+    width:400px;
+    height:130px;
+}
+.txt4_wrap .design_center_txt4_sub h4{
+    font-size:20px;
+} /* 삼화 컬처 프로젝트 */
+
+.txt4_wrap .design_center_txt4_sub p{
+    font-size:16px;
+    margin-top:25px;
+    line-height:1.5em;
+} /* 페인트와 컬러, 예술이 함께 만드는... */
+
+.txt4_wrap .design_center_txt4_sub button{
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+    position:absolute;
+    bottom:0;
+}/* 버튼 컬러 커뮤니케이션 텍스트*/
+
+.txt4_wrap .design_center_txt4_sub .prev_button{right:50px;} 
+
+.txt4_wrap .design_center_txt4_sub .next_button{right:0px;}
+
+
+
+
+

@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/*위로가기 버튼 전체*/
+#top_btn{
+    position:fixed;
+    bottom:100px;
+    right:50px;
+    width:48px;
+    height:48px;
+    background-color:rgba(255,255,255,0.3);
+    border:2px solid #000000;
+    border-radius:50%;
+    transition:all 0.3s;
+}
+#top_btn:hover{
+    background-color:rgba(255,255,255,0.7);
+}
+
+#top_btn a{
+    display:block;
+    width:48px;
+    height:48px;
+    position:relative;
+}
+#top_btn a img{
+    text-align:center;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    transition:all 0.2s ease-in-out;
+}
+
+#top_btn:hover a img{transform:translate(-50%, -55%);}
+
+
+/*bottom_wrap 하단 전체*/
+#bottom_wrap{
+    height:400px;
+    width:100%;
+    min-width:1900px;
+    margin:200px auto 0 auto;
+    background:url(../images/bottom/bottom_bg.png) no-repeat top;
+    box-sizing:border-box;
+    padding-top:49px;
+}
+
+#bottom{
+    box-sizing:border-box;
+    width:1313px;
+    height:310px;
+    border:5px solid #000000;
+    margin:0 auto;
+    background-color:#ffffff;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/*하단 좌측*/
+#bottom #bottom_l{
+    float:left;
+    width:479px;
+    height:300px;
+}
+
+#bottom #bottom_l h2{
+    font-size:40px;
+    margin-top:10px;
+    margin-left:18px;
+    height:30px;
+    line-height:25px;
+}/*SAMHWA*/
+
+#bottom #bottom_l h3{
+    font-size:16px;
+    margin-top:10px;
+    margin-left:68px;
+    height:18px;
+    line-height:18px;
+}/*삼화페인트공업(주)*/
+
+#bottom #bottom_l address{
+    margin-top:76px;
+    font-style:normal;
+    text-align:right;
+}
+
+#bottom #bottom_l address p:nth-of-type(1){
+    font-size:16px;
+    margin-bottom:60px;
+    height:18px;
+    line-height:18px;
+} /*대표이사: 오진수, 류기붕*/
+
+#bottom #bottom_l address p + p{
+    height:15px;
+    line-height:15px;
+} /*서울본사, 안산공장*/
+
+#bottom #bottom_l p:nth-of-type(2){margin-bottom:10px;}
+#bottom #bottom_l p:nth-of-type(2) strong{margin-right:36px;}
+#bottom #bottom_l p:nth-of-type(3) strong{margin-right:12px;}
+
+/*하단 우측*/
+#bottom #bottom_r{
+    float:right;
+    width:412px;
+    height:300px;
+    margin-right:87px;
+}
+
+#bottom #bottom_r address{
+    margin-top:45px;
+    font-style:normal;
+} /*Technical Service Center*/
+
+#bottom #bottom_r dl dt{
+    font-size:18px;
+    margin-bottom:15px;
+    height:20px;
+    font-weight:bold;
+    line-height:20px;
+} /*Technical Service Center*/
+
+#bottom #bottom_r dl dd{
+    font-size:16px;
+    height:18px;
+    line-height:18px;
+    cursor:pointer;
+}/*1544-5357*/
+
+#bottom #bottom_r dl dd:hover{text-decoration:underline;}
+
+/*sns 아이콘*/
+#bottom #bottom_r .bottom_sns{
+    float:right;
+    width:180px;
+    height:51px;
+    overflow:hidden;
+    margin-top:69px;
+    margin-bottom:28px;
+}
+
+#bottom #bottom_r .bottom_sns li{
+    width:50px;
+    height:50px;
+    float:left;
+    text-align:right;
+}
+#bottom #bottom_r .bottom_sns li + li{margin-left:15px;}
+
+#bottom #bottom_r .bottom_sns li a{
+    width:50px;
+    height:50px;
+    display:block;
+}
+#bottom #bottom_r .bottom_sns li a.img{transition:all 1s;}
+
+#bottom #bottom_r .bottom_sns li a:hover img{transform:translateY(-100px);}
+
+#bottom #bottom_r p{
+    clear:both;
+    font-size:13px;
+    height:14px;
+    line-height:14px;
+}/*© 2020 SAMHWA PAINTS ...*/

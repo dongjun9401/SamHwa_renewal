@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>삼화페인트(리뉴얼)_포트폴리오</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/top.js"></script>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login_layout.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <header id="login_top_wrap">
+       <div id="login_top">
+        <h1><a href="index.html"><img src="images/login/logo_samwha.png" alt="삼화SAMWHA" width="88" height="32"></a></h1>
+        
+        <ul id="login_quick_wrap">
+            <li><a href="#"><img src="images/login/paint_logo.png" alt="관심등록 페인트 제품" width="21" height="29"></a></li>
+            <li><a href="login.html"><img src="images/login/login_logo.png" alt="로그인" width="23" height="24"></a></li>
+            <li><a href="#"><img src="images/login/menu_logo.png" alt="전체메뉴" width="29" height="25" id="quick_menu_btn"></a></li>
+        </ul> <!--login_quick_wrap-->
+        </div> <!--login_top-->
+    </header> <!--login_top_wrap-->
+     <div id="menu_popup_wrap">
+       
+        <div id="menu_popup">
+           
+            <p class="popup_btn">
+                <span class="bar4">4</span>
+                <span class="bar5">5</span>
+                <span class="bar6">6</span>
+            </p>
+            
+            <nav id="popup_navi">
+               <ul>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="color.html">Color</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="customer.html">Customer</a></li>
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="ir.html">IR</a></li>
+
+               </ul>
+            </nav> <!--popup_navi-->
+
+           <h2><img src="images/top/menu_popup_logo.png" alt="SamHwa Logo" width="137" height="50"></h2>
+        </div> <!--menu_popup-->
+          
+    </div> <!--menu_popup_wrap popup창-->
+    <div id="login_wrap">
+        <div id="login_img_wrap">
+           <p class="login_img">
+                <img src="images/login/login_img01.png" alt="아이럭스 제품" width="580" height="723" id="login_img01">
+                <img src="images/login/login_img02.png" alt="삼화 페인트 제품 디자인" width="580" height="723" id="login_img02">
+                <img src="images/login/login_img03.png" alt="리빙 컴퍼니 누하스와 콜라보 포스" width="580" height="723" id="login_img03">
+           </p>
+        </div> <!--login_img_wrap-->
+        
+        <div id="login_form_wrap">
+            <form action="asp" method="post" id="login_form">
+                <h2>SAMHWA<span>로그인</span></h2>
+                
+                <div id="login_type_btn">
+                    <button type="button" class="member_btn">회원</button>
+                    <button type="button" class="nomember_btn">비회원</button>
+                </div> <!--login_type_btn-->
+                
+                <!--회원 로그인-->
+                <div id="login_input_wrap">
+                    <label for="u_id" class="u_info_box"><input type="text" placeholder="아이디" id="u_id" required class="userinfo_input"><strong>아이디</strong></label>
+                    <label for="u_pwd" class="u_info_box"><input type="password" placeholder="비밀번호" id="u_pwd" required class="userinfo_input"><strong>비밀번호</strong></label>
+                    
+                    <div class="u_chk_search">
+                        <label for="id_chk"><input type="checkbox" id="id_chk">아이디 저장</label>
+                    
+                    
+                        <ul class="userinfo_search">
+                            <li><a href="#">아이디 찾기</a></li>
+                            <li><a href="#">비밀번호 찾기</a></li>
+                        </ul> <!--userinfo_search-->
+                    </div>
+                    
+                    <div class="login_btn_wrap">
+                    <button type="button" class="join_btn1">회원가입</button>
+                    <button type="button" class="login_btn2">로그인</button>
+                    </div>
+                </div> <!--login_input_wrap-->
+        
+                
+                <!--비회원 로그인-->
+                <div id="nomember_wrap">
+                    <label for="nomember_order_num" class="nomember_info_box">
+                        <input type="text" placeholder="주문번호" id="nomember_order_num" required class="nomember_input"><strong>주문번호</strong>
+                    </label>
+                    
+                    <label for="nomember_tel" class="nomember_info_box">
+                        <input type="tel" placeholder="핸드폰 뒷 4자리" id="nomember_tel" required class="nomember_input"><strong>핸드폰 뒷자리</strong>
+                    </label>
+                    
+                    <label for="nomember_pwd" class="nomember_info_box">
+                        <input type="password" placeholder="주문 비밀번호" id="nomember_pwd" required class="nomember_input"><strong>주문 비밀번호</strong>
+                    </label>
+                    
+                    <div class="nomember_chk_search">
+                        <label for="order_num_chk"><input type="checkbox" id="order_num_chk">주문번호 저장</label>
+                    
+                    
+                        <a href="#">주문번호 찾기</a>
+                    </div>
+                    
+                    <div class="login_btn_wrap">
+                        <button type="button" class="join_btn1">회원가입</button>
+                    <button type="button" class="login_btn2">로그인</button>
+                    </div>
+                </div> <!--nomember_wrap-->
+                
+                <div id="sns_login">
+                    <h3>간편 로그인</h3>
+                    
+                    <ul class="sns_login_icon">
+                        <li><a href="#"><img src="images/login/kakao_icon.png" alt="카카오톡 로그인" width="60" height="60"></a></li>
+                        <li><a href="#"><img src="images/login/google_icon.png" alt="구글 로그인" width="60" height="60"></a></li>
+                        <li><a href="#"><img src="images/login/naver_icon.png" alt="네이버 로그인" width="60" height="60"></a></li>
+                    </ul>
+                </div> <!--sns_login-->
+    
+            </form>
+        </div> <!--login_form_wrap-->
+    </div> <!--login_wrap-->
+    
+    <!--위로가기 버튼-->
+        <p id="top_btn"><a href="#top_wrap"><img src="images/bottom/back_to_top.svg" alt="위로 가기 화살표" width="46" height="46"></a></p>
+        
+        <footer id="bottom_wrap">
+           <div id="bottom">
+                <div id="bottom_l">
+                    <h2>SAMHWA</h2>
+                    <h3>삼화페인트공업(주)</h3>
+
+                    <address>
+                        <p><strong>대표이사: 오진수, 류기붕</strong></p>
+                        <p><strong>서울본사</strong>서울특별시 종로구 돈화문로 58 (묘동)</p>
+                        <p><strong>안산공장</strong>경기도 안산시 단원구 별망로 178 (성곡동)</p>
+                    </address>
+
+                </div> <!--bottom_l 하단 왼쪽-->
+
+                <div id="bottom_r">
+                    <address>
+                        <dl>
+                            <dt>Technical Service Center</dt>
+                            <dd>1544-5357</dd>
+                        </dl>
+                    </address>
+
+                    <ul class="bottom_sns">
+                        <li><a href="https://blog.naver.com/samhwa2016" target="_blank"><img src="images/bottom/naver_icon.png" alt="네이버 블로그" width="50" height="151"></a></li>
+                        <li><a href="https://www.instagram.com/samhwa_paint/" target="_blank"><img src="images/bottom/insta_icon.png" alt="인스타그램" width="50" height="150"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UChCIzdQAmFFUkqghKWKFOPA" target="_blank"><img src="images/bottom/youtube_icon.png" alt="유튜브 채널" width="50" height="150"></a></li>
+                    </ul>
+
+                    <p>&copy; 2020 SAMHWA PAINTS INDUSTRIAL CO. LTD. All Rights Reserved.</p>
+                </div> <!--bottom_r 하단 오른쪽-->
+            
+            </div> <!--bottom-->
+        </footer> <!--bottom_wrap 전체-->
+</body>
+</html>

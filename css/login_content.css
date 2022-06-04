@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+#login_wrap{
+    width:1160px;
+    height:723px;
+    margin:80px auto 0 auto;
+    clear:both;
+}
+
+#login_wrap #login_img_wrap{
+    float:left;
+    width:580px;
+    height:723px;
+    overflow:hidden;
+} /* 좌측 이미지 */
+
+#login_wrap #login_img_wrap .login_img{
+    width:1740px;
+    height:723px;
+    position:relative;
+} 
+
+#login_wrap #login_img_wrap .login_img img{position:absolute;}
+
+#login_form_wrap{
+    float:right;
+    width:580px;
+    height:723px;
+    background:url(../images/login/login_bg01.png) repeat-x left top #edecec;
+} /* 우측 로그인 입력 전체 */
+
+#login_form{
+    width:475px;
+    height:615px;
+    margin:50px auto 0 auto;
+    border:3px solid #000000;
+    background-color:#ffffff;
+    box-sizing:border-box;
+}
+
+#login_form h2{
+    font-size:40px;
+    height:45px;
+    line-height:45px;
+    margin-top:14px;
+    margin-left:10px;    
+} /* SAMHWA 로그인 */
+
+#login_form h2 span{
+    font-size:25px;
+    margin-left:12px;
+}
+
+#login_form #login_type_btn{width:390px; margin:40px auto 0 auto;}
+
+#login_form #login_type_btn button{
+    font-size:25px;
+    font-weight:bold;
+    width:190px;
+    height:50px;
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+/*회원 로그인*/
+#login_input_wrap{
+    width:390px;
+    margin:20px auto 0 auto;
+}
+#login_input_wrap .u_info_box{
+    width:390px;
+    height:50px;
+    display:block;
+} 
+
+#login_input_wrap .u_info_box[for="u_id"]{margin-bottom:8px;}
+
+#login_input_wrap .u_info_box strong{display:none;}
+
+#login_input_wrap label .userinfo_input{
+    width:390px;
+    height:50px;
+    border:2px solid #333333;
+    border-radius:10px;
+    box-sizing:border-box;
+    text-indent:10px;
+    font-size:15px;
+    font-weight:bold;
+} /* 아이디 비밀번호 input */
+
+.u_chk_search{
+    font-size:12px; 
+    margin-top:10px; 
+    height:20px;
+} /* 아이디 저장 + 아이디 비밀번호 찾기 영역 */
+
+.u_chk_search label{
+    float:left;
+    font-size:14px;
+    font-weight:bold;
+    color:#666666;
+    cursor:pointer;
+} /* 아이디 저장 txt */
+
+.u_chk_search label:hover{
+    color:#333333;
+}
+
+.u_chk_search label #id_chk{
+    height:16px;
+    width:16px;
+    margin-left:10px;
+    margin-bottom:3px;
+    margin-right:10px;
+} /* 아이디 찾기 체크박스 */
+
+.u_chk_search .userinfo_search{ float:right; } /* 아이디 비밀번호 찾기 */
+
+.u_chk_search .userinfo_search li{
+    float:left;
+    font-size:14px;
+    font-weight:bold;
+    position:relative;
+}
+
+.u_chk_search .userinfo_search li a{color:#666666;}
+
+.u_chk_search .userinfo_search li a:hover{color:#333333;}
+
+.u_chk_search .userinfo_search li:nth-child(1){padding-right:12px;}
+
+.u_chk_search .userinfo_search li:nth-child(1)::after{
+    content:"";
+    display:block;
+    width:2px;
+    height:14px;
+    background-color:#dddddd;
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+} /* 찾기 사이 막대 */
+
+.u_chk_search .userinfo_search li:nth-child(2){ padding-left:10px; }
+
+.login_btn_wrap{
+    clear:both;
+    margin-top:15px;
+    height:50px;
+} /* 회원가입 로그인 버튼 영역 */
+
+.login_btn_wrap button{
+    font-size:18px;
+    font-weight:bold;
+    outline:none;
+    border:2px solid #333333;
+    width:190px;
+    height:50px;
+    background-color:#ffffff;
+    cursor:pointer;
+    border-radius:10px;
+    float:left;
+    transition:background 0.3s;
+}
+
+.login_btn_wrap .login_btn2{float:right;}
+
+.login_btn_wrap button:hover{
+    background-color:#e20d3a;
+    color:#ffffff;
+    border-color:#e20d3a;
+}
+
+.login_btn_wrap .join_btn1 a{
+    display:block;
+    width:186px;
+    height:46px;
+    line-height:46px;
+}
+
+/*비회원 로그인*/
+#nomember_wrap{
+    width:390px;
+    margin:20px auto 0 auto;
+}
+
+#nomember_wrap .nomember_info_box{
+    width:390px;
+    height:50px;
+    display:block;
+} /* 비회원 입력 공통 */
+
+.nomember_info_box[for="nomember_order_num"],#nomember_wrap, .nomember_info_box[for="nomember_tel"]{margin-bottom:3px;}
+
+#nomember_wrap .nomember_info_box strong{display:none;}
+
+#nomember_wrap label .nomember_input{
+    width:390px;
+    height:50px;
+    border:2px solid #333333;
+    border-radius:10px;
+    box-sizing:border-box;
+    text-indent:10px;
+    font-size:15px;
+    font-weight:bold;
+} /* 비회원 로그인 정보 input */
+
+.nomember_chk_search{
+    font-size:12px;
+    margin-top:10px;
+    height:20px;
+}
+
+.nomember_chk_search label{
+    float:left;
+    font-size:14px;
+    font-weight:bold;
+    color:#666666;
+    cursor:pointer;
+} /*주문번호 저장*/
+
+.nomember_chk_search label:hover{color:#333333;}
+
+.nomember_chk_search label #order_num_chk{
+    margin-bottom:3px;
+    margin-right:10px;
+    margin-left:10px;
+    width:16px;
+    height:16px;
+}
+
+.nomember_chk_search a{
+    float:right;
+    font-size:14px;
+    color:#666666;
+} /* 주문번호 찾기 */
+
+.nomember_chk_search a:hover{color:#333333;}
+
+/*sns 로그인 버튼 공통*/
+#sns_login{
+    width:262px;
+    height:118px;
+    margin:30px auto 0 auto;
+} 
+
+#sns_login h3{
+    font-size:25px;
+    text-align:center;
+    height:28px;
+    line-height:28px;
+    color:#333333;
+} /* 간편 로그인 */
+
+#sns_login .sns_login_icon{
+    width:262px;
+    height:60px;
+    margin-top:20px;
+}
+
+#sns_login .sns_login_icon li{
+    height:60px;
+    width:60px;
+    float:left;
+    border-radius:50%;
+}
+
+#sns_login .sns_login_icon li:hover{box-shadow:0px 0px 20px rgba(0,0,0,0.2);}
+
+#sns_login .sns_login_icon li+li{margin-left:40px;}
+
+#sns_login .sns_login_icon li a{
+    height:60px;
+    width:60px;
+    display:block;
+}

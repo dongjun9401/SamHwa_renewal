@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+@import "top.css"; /*상단 전체*/
+@import "customer_content.css"; /*고객페이지 내용 전체*/
+@import "bottom.css"; /*하단 전체*/
+
+body,button,input,textarea{font:normal 14px/1.5em  "Noto Sans KR",sans-serif;}
+
+a{color:#000000;}
+
+label,input,button{border:none; outline:none;}
+
+
+@font-face{
+    font-family:NanumSR;
+    src:url("../font/NanumSquareRoundR.eot");
+    src:url("../font/NanumSquareRoundR.eot?#iefix")format("embedded-opentype"),
+        url("../font/NanumSquareRoundR.ttf")format("truetype"),
+        url("../font/NanumSquareRoundR.woff")format("woff");
+}

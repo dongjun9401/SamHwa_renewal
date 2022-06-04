@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+/*company_intro_wrap 전체*/
+#company_intro_wrap{
+    width:1240px;
+    margin:72px auto 0 auto;
+}
+
+#company_intro_wrap h2{
+    font-size:90px;
+    height:100px;
+    line-height:100px;
+    font-weight:normal;
+    margin-left:60px;
+    margin-bottom:30px;
+} /* ABOUT */
+
+#company_intro_wrap .intro_con00_txt{
+    float:right;
+    margin-right:40px;
+} /*우리는 일상에 늘 삼화페인트가.. txt*/
+
+#company_intro_wrap .intro_con_txt{
+    width:470px;
+} /* intro_con_txt div 공통*/
+
+#company_intro_wrap .intro_con_txt h3{
+    font-size:22px;
+    height:25px;
+    line-height:25px;
+    margin-bottom:20px;
+    text-align:center;
+} /* 소 제목 공통 h3*/
+
+#company_intro_wrap .intro_con_txt p{
+    font-size:16px;
+    line-height:1.7em;
+    text-indent:5px;
+    text-align:justify;
+    letter-spacing:0px;
+    color:#444444;
+} /* 내용 p 공통 p*/
+
+#company_intro_wrap .intro_con_txt p:nth-of-type(2){margin-top:30px;}
+.intro_con_txt00{
+    float:right;
+} /* 우리는 일상에 늘.... */
+
+
+#company_intro_wrap .intro_con_img{
+    clear:both;
+    margin-top:25px;        
+    margin-bottom:10px;
+} /*회사소개 메인 이미지*/ 
+
+#company_intro_wrap .intro_con_txt_sub{
+    font-size:16px;
+    line-height:1.7em;
+    text-align:justify;
+    width:1135px;
+    text-indent:5px;
+    letter-spacing:0px;
+    color:#2f3233;
+    margin-left:5px;
+} /* 삼화페인트는 페인트를 넘어 우리 ... */
+
+
+
+.intro_con{
+    width:1240px;
+    height:350px;
+    clear:both;
+    margin-top:100px;
+    position:relative;
+}
+
+.intro_con01 .intro_con01_txt{
+    float:left;
+    margin-left:85px;
+    margin-top:57px;
+
+}
+.intro_con01{
+    margin-left:-1000px;
+    opacity:0;
+} /*js scroll 효과*/
+
+.intro_con01 img{
+    float:right;
+    margin-right:40px;
+}
+
+.intro_con02{
+    margin-left:1000px;
+    opacity:0;
+} /*js scroll 효과*/
+
+.intro_con02 .intro_con02_txt{
+    float:right;
+    margin-right:85px;
+    margin-top:40px;
+}
+
+.intro_con02 img{
+    float:left;
+    margin-left:40px;
+}
+
+.intro_con03{
+    margin-left:-1000px;
+    opacity:0;
+} /*js scroll 효과*/
+
+.intro_con03 .intro_con03_txt{
+    float:left;
+    margin-left:85px;
+    margin-top:80px;
+}
+
+.intro_con03 img{
+    float:right;
+    margin-right:40px;
+}
+
+
+/*company_manage_wrap 책임경영 전체*/
+#company_manage_wrap{
+    clear:both;
+    width:1280px;
+    margin:200px auto 0 auto;
+}
+
+#company_manage_wrap h2{
+    font-size:25px;
+    height:28px;
+    line-height:28px;
+    text-align:center;
+    margin-bottom:45px; 
+} /*책임 경영 h2*/
+
+
+.manage_eco_wrap, .manage_ethic_wrap{
+    width:1280px;
+    height:200px;
+    clear:both;
+}
+
+.manage_eco_wrap{margin-bottom:40px;}
+
+.manage_wrap figure{
+    float:left;
+    position:relative;
+    width:400px;
+    height:200px;
+    overflow:hidden;
+    cursor:pointer;
+    opacity:0;
+} /*경영 방침 각 파트*/
+
+.manage_wrap figure+figure{margin-left:40px;}
+
+.manage_wrap figure figcaption{color:#ffffff;} /*각 경영방침 txt*/
+
+.manage_wrap figure figcaption::before{
+    content:"";
+    display:block;
+    width:400px;
+    height:200px;
+    background-color:rgba(0,0,0,0.3);
+    position:absolute;
+    top:0;
+    left:-400px;
+    z-index:5;
+    transition:all 0.3s;
+}
+
+.manage_wrap figure figcaption h3{
+    position:absolute;
+    top:10px;
+    left:19px;
+    z-index:100;
+    height:28px;
+    line-height:28px;
+    font-size:25px;
+} /*경영방침 각 제목 h3*/
+
+.manage_wrap figure figcaption p{
+    position:absolute;
+    bottom:10px;
+    left:19px;
+    z-index:100;
+    font-size:16px;
+    line-height:1.6em;
+    opacity:0;
+    transition:all 0.3s;
+}/*경영방침 내용 p*/
+
+.manage_wrap figure:hover figcaption p{opacity:1;}
+
+.manage_wrap figure:hover figcaption::before{left:0;}
+
+
+/*company_brand_wrap 브랜드 전체*/
+#company_brand_wrap{
+    width:1400px;
+    margin:200px auto 0 auto;
+}
+
+#company_brand_wrap h2{
+    font-size:25px;
+    height:28px;
+    line-height:28px;
+    text-align:center;
+    margin-bottom:45px;
+} /*브랜드 h2*/
+
+#company_brand{
+    width:1400px;
+    height:320px;
+}
+
+#company_brand p{
+    width:320px;
+    height:320px;
+    float:left;
+    background-color:#f7f7f7;
+    position:relative;
+    cursor:pointer;
+} /*브랜드 로고 상위 p*/
+
+#company_brand p+p{margin-left:40px;}
+
+#company_brand p img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:15;
+    transition:all 0.3s;
+} /* 브랜드 로고 */
+
+#company_brand p::after{
+    content:"";
+    display:block;
+    width:320px;
+    height:320px;
+    position:absolute;
+    left:0;
+    top:0;
+    background-color:rgba(0,0,0,0.2);
+    z-index:10;
+    opacity:1;
+    transition:all 0.3s;
+}
+
+#company_brand p:hover::after{opacity:0;}
+
+#company_brand p:hover img{transform:translate(-50%, -50%) scale(1.05);}
+
+
+
+
+
